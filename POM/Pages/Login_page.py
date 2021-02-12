@@ -1,9 +1,9 @@
 class Login_page():
     def __init__(self, driver):
         self.driver = driver
-        self.user_id = ""
-        self.password_id = ""
-        self.submit_id   = ""
+        self.user_id = "txtusername"
+        self.password_id = "txtpassword"
+        self.submit_id   = "btnlogin"
     def UserName(self, Uname):
         self.driver.find_element_by_id(self.user_id).clear()
         self.driver.find_element_by_id(self.user_id).send_keys(Uname)
