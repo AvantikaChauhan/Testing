@@ -15,8 +15,8 @@ from POM.Pages.HomePage import Home_page
             driver.get(" ")
 
             login = Login_page(driver)
-            login.UserName("")
-            login.Password("")
+            login.UserName("Avantika")
+            login.Password("Mercy1212")
             login.ClickLogin()
 
             home = Home_page(driver)
